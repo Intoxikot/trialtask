@@ -33,10 +33,10 @@ public class Task {
         if (price == null)
             return null;
 
-        if (discount < 1 || discount > 100)
+        if (discount < 1 || discount > 99)
             return null;
 
-        if (readLength < 1 || readLength + offset > price.length)
+        if (readLength < 1 || readLength + offset >= price.length)
             return null;
 
         int[] result = new int[readLength];
