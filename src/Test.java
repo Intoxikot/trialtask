@@ -56,6 +56,17 @@ public class Test {
         runTest(in);
     }
 
+    // Доп тест
+    public void test6() {
+        TestData in = new TestData();
+        in.setPrice(new int[]{1,2,3});
+        in.setDiscount(50);
+        in.setOffset(2);
+        in.setReadLength(1); // incorrect value
+        in.setAnswer(new int[]{1});
+        runTest(in);
+    }
+
     private void runTest(TestData data) {
         data.setResult(
             new Task().decryptData(

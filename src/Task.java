@@ -13,10 +13,8 @@ public class Task {
         test.test3();
         test.test4();
         test.test5();
-
-        System.out.println("Press any key...");
-        System.in.read();
-
+        test.test6();
+        
     }
 
     /**
@@ -36,7 +34,7 @@ public class Task {
         if (discount < 1 || discount > 99)
             return null;
 
-        if (readLength < 1 || readLength + offset >= price.length)
+        if (readLength < 1 || readLength + offset > price.length)
             return null;
 
         int[] result = new int[readLength];
