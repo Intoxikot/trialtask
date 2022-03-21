@@ -62,8 +62,19 @@ public class Test {
         in.setPrice(new int[]{1,2,3});
         in.setDiscount(50);
         in.setOffset(2);
-        in.setReadLength(1); // incorrect value
+        in.setReadLength(1);
         in.setAnswer(new int[]{1});
+        runTest(in);
+    }
+
+    // Тест offset
+    public void test7() {
+        TestData in = new TestData();
+        in.setPrice(new int[]{5,10});
+        in.setDiscount(50);
+        in.setOffset(2); // incorrect value
+        in.setReadLength(1);
+        in.setAnswer(null);
         runTest(in);
     }
 

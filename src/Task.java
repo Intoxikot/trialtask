@@ -14,7 +14,8 @@ public class Task {
         test.test4();
         test.test5();
         test.test6();
-        
+        test.test7();
+
     }
 
     /**
@@ -35,6 +36,9 @@ public class Task {
             return null;
 
         if (readLength < 1 || readLength + offset > price.length)
+            return null;
+
+        if (offset < 0 || offset >= price.length)
             return null;
 
         int[] result = new int[readLength];
