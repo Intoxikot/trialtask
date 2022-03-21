@@ -3,9 +3,9 @@ import java.util.Arrays;
 
 public class TestData {
 
-    private int[] price;  // исходные цены
-    private int[] result; // результирующие цены
-    private int[] answer; // ожидаемый ответ с ценами (задается вручную)
+    private int[] price;  // РёСЃС…РѕРґРЅС‹Рµ С†РµРЅС‹
+    private int[] result; // СЂРµР·СѓР»СЊС‚РёСЂСѓСЋС‰РёРµ С†РµРЅС‹
+    private int[] answer; // РѕР¶РёРґР°РµРјС‹Р№ РѕС‚РІРµС‚ СЃ С†РµРЅР°РјРё (Р·Р°РґР°РµС‚СЃСЏ РІСЂСѓС‡РЅСѓСЋ)
     private int discount;
     private int offset;
     private int readLength;
@@ -38,7 +38,7 @@ public class TestData {
         return sb.toString();
     }
 
-    // Проверка соответствия результата и ожидаемого ответа
+    // РџСЂРѕРІРµСЂРєР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚Р° Рё РѕР¶РёРґР°РµРјРѕРіРѕ РѕС‚РІРµС‚Р°
     private boolean checkAnswer() {
         if (result == null && answer == null)
             return true;

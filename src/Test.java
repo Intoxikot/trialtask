@@ -1,7 +1,7 @@
 
 public class Test {
 
-    // Простой тест
+    // РџСЂРѕСЃС‚РѕР№ С‚РµСЃС‚
     public void test1() {
         TestData in = new TestData();
         in.setPrice(new int[]{5,100,20,66,16});
@@ -12,7 +12,7 @@ public class Test {
         runTest(in);
     }
 
-    // Тест нулей
+    // РўРµСЃС‚ РЅСѓР»РµР№
     public void test2() {
         TestData in = new TestData();
         in.setPrice(new int[]{0,0,0,0,0});
@@ -23,7 +23,7 @@ public class Test {
         runTest(in);
     }
 
-    // Нулл тест
+    // РќСѓР»Р» С‚РµСЃС‚
     public void test3() {
         TestData in = new TestData();
         in.setPrice(null); // incorrect value
@@ -34,7 +34,7 @@ public class Test {
         runTest(in);
     }
 
-    // Тест discount
+    // РўРµСЃС‚ discount
     public void test4() {
         TestData in = new TestData();
         in.setPrice(new int[]{1,2,3,4});
@@ -45,7 +45,7 @@ public class Test {
         runTest(in);
     }
 
-    // Тест readLength
+    // РўРµСЃС‚ readLength
     public void test5() {
         TestData in = new TestData();
         in.setPrice(new int[]{1,2,3});
